@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "vite build && git add -A && git commit -m 'Deploy: Production build' && git push origin main"
   },
   "dependencies": {
     "bootstrap": "^5.3.0",
@@ -15,5 +16,11 @@
   "devDependencies": {
     "vite": "^5.0.0",
     "@vitejs/plugin-vue": "^5.0.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/a50134/resume.git"
+  },
+  "author": "Chenghsin Lee",
+  "license": "MIT"
 }
