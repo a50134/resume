@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chenghsin Lee - Front-End Developer & Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" rel="stylesheet">
+    <link href="src/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">Chenghsin Lee</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">首頁</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">關於我</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">專案</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">技能</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">聯絡</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index-en.html" title="English">
+                            <i class="fas fa-globe me-1"></i>English
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Carousel -->
+    <section id="home" class="hero-section py-5">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="glass-card p-5">
+                        <h1 class="display-4 fw-bold mb-4">Chenghsin Lee</h1>
+                        <h2 class="h3 text-primary mb-4">Front-End Developer</h2>
+                        <p class="lead mb-4">
+                            從稅務領域轉職前端工程師，具備 6+ 年職場經驗與數據分析背景。
+                            專注於建立使用者友善的網頁介面，結合結構化思維與持續學習精神。
+                        </p>
+                        <div class="d-flex gap-3">
+                            <a href="#projects" class="btn btn-primary btn-lg">查看專案</a>
+                            <a href="#contact" class="btn btn-outline-primary btn-lg">聯絡我</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="carousel-container">
+                        <div class="swiper carousel-swiper">
+                            <div class="swiper-wrapper">
+                                <!-- Carousel Items -->
+                                <div class="swiper-slide">
+                                    <div class="carousel-item-content">
+                                        <i class="fas fa-code fa-10x text-primary"></i>
+                                        <h3 class="mt-4">前端開發</h3>
+                                        <p>React, Bootstrap, HTML/CSS</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="carousel-item-content">
+                                        <i class="fas fa-chart-bar fa-10x text-primary"></i>
+                                        <h3 class="mt-4">數據分析</h3>
+                                        <p>Excel, 流程優化</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="carousel-item-content">
+                                        <i class="fas fa-globe fa-10x text-primary"></i>
+                                        <h3 class="mt-4">國際化</h3>
+                                        <p>日文 N2, 英文 B1-B2</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section with Glassmorphism -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="display-5 fw-bold mb-5 text-center" data-aos="fade-up">關於我</h2>
+            <div class="row">
+                <div class="col-lg-6 mb-4" data-aos="fade-right">
+                    <div class="glass-card p-4">
+                        <h3 class="h4 mb-3">職業背景</h3>
+                        <p>
+                            在國稅局及稅捐處擁有 6 年稅務工作經驗，之前在永豐銀行從事行政工作。
+                            在日本留學 2 年，具備日文 N2 證照，英文程度達 B1-B2 水準。
+                        </p>
+                        <p>
+                            目前正在學習後端開發和 AI 應用，致力於成為全棧工程師。
+                            每天堅持英文口說練習，目標是達到流利溝通水準。
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4" data-aos="fade-left">
+                    <div class="glass-card p-4">
+                        <h3 class="h4 mb-3">核心特質</h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="fas fa-check text-primary me-2"></i>結構化思維與細節導向</li>
+                            <li class="mb-2"><i class="fas fa-check text-primary me-2"></i>數據分析與流程優化</li>
+                            <li class="mb-2"><i class="fas fa-check text-primary me-2"></i>跨文化溝通能力</li>
+                            <li class="mb-2"><i class="fas fa-check text-primary me-2"></i>持續學習與自我提升</li>
+                            <li class="mb-2"><i class="fas fa-check text-primary me-2"></i>偏好遠端工作與外商環境</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects & Video Carousel Section -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="display-5 fw-bold mb-5 text-center" data-aos="fade-up">專案展示</h2>
+            
+            <!-- Projects Carousel -->
+            <div class="projects-carousel mb-5" data-aos="fade-up">
+                <div class="swiper projects-swiper">
+                    <div class="swiper-wrapper">
+                        <!-- Project 1 -->
+                        <div class="swiper-slide">
+                            <div class="card h-100 shadow-sm project-card">
+                                <div class="card-body">
+                                    <h3 class="card-title h4 mb-3">DoraHandmade</h3>
+                                    <p class="card-text">
+                                        使用 React + Bootstrap 開發的全棧電商應用。
+                                        負責商品詳細頁面的前端開發，實現響應式設計與 API 整合。
+                                    </p>
+                                    <div class="mb-3">
+                                        <span class="badge bg-primary me-2">React</span>
+                                        <span class="badge bg-primary me-2">Bootstrap</span>
+                                        <span class="badge bg-primary">API Integration</span>
+                                    </div>
+                                    <a href="https://github.com/a50134" class="btn btn-outline-primary btn-sm" target="_blank">
+                                        <i class="fab fa-github me-2"></i>GitHub
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Project 2 -->
+                        <div class="swiper-slide">
+                            <div class="card h-100 shadow-sm project-card">
+                                <div class="card-body">
+                                    <h3 class="card-title h4 mb-3">I-need-this</h3>
+                                    <p class="card-text">
+                                        使用 HTML、CSS 與 Bootstrap 開發的實用工具網站。
+                                        專注於使用者體驗與介面互動設計。
+                                    </p>
+                                    <div class="mb-3">
+                                        <span class="badge bg-primary me-2">HTML5</span>
+                                        <span class="badge bg-primary me-2">CSS3</span>
+                                        <span class="badge bg-primary">Bootstrap</span>
+                                    </div>
+                                    <a href="https://github.com/a50134" class="btn btn-outline-primary btn-sm" target="_blank">
+                                        <i class="fab fa-github me-2"></i>GitHub
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+
+            <!-- Video Section -->
+            <div class="row mt-5" data-aos="fade-up">
+                <div class="col-12">
+                    <h3 class="h4 mb-4 text-center">發表影片</h3>
+                    <div class="video-container glass-card p-4">
+                        <video width="100%" height="auto" controls style="border-radius: 12px;">
+                            <source src="/manus-storage/20260322DOMO分享_1eb8e50f.mp4" type="video/mp4">
+                            您的瀏覽器不支援 HTML5 影片。
+                        </video>
+                        <p class="mt-3 text-center text-muted">DoraHandmade 專案分享 - 2026年3月22日</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="display-5 fw-bold mb-5 text-center" data-aos="fade-up">技能與語言</h2>
+            <div class="row">
+                <div class="col-lg-6 mb-4" data-aos="fade-right">
+                    <div class="glass-card p-4">
+                        <h3 class="h5 mb-3">技術技能</h3>
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>HTML / CSS / JavaScript</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>React</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Bootstrap</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Git / GitHub</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>API Integration</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4" data-aos="fade-left">
+                    <div class="glass-card p-4">
+                        <h3 class="h5 mb-3">語言能力</h3>
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>中文（繁體）</span>
+                                <span>原生</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 100%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>日文（JLPT N2）</span>
+                                <span>專業</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>英文（B1-B2）</span>
+                                <span>進階</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <h3 class="h5 mb-3 mt-4">其他技能</h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="fas fa-check text-primary me-2"></i>數據分析 (Excel)</li>
+                            <li class="mb-2"><i class="fas fa-check text-primary me-2"></i>稅務與財務數據處理</li>
+                            <li class="mb-2"><i class="fas fa-check text-primary me-2"></i>AI 工具應用 (Claude)</li>
+                            <li class="mb-2"><i class="fas fa-check text-primary me-2"></i>流程優化與改善</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="display-5 fw-bold mb-5 text-center" data-aos="fade-up">聯絡我</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="glass-card p-5 text-center">
+                        <p class="lead mb-4">歡迎透過以下方式與我聯絡</p>
+                        <div class="d-flex justify-content-center gap-4 flex-wrap">
+                            <a href="mailto:cv698943@gmail.com" class="contact-link">
+                                <i class="fas fa-envelope fa-2x text-primary mb-2"></i>
+                                <p>cv698943@gmail.com</p>
+                            </a>
+                            <a href="tel:0916510881" class="contact-link">
+                                <i class="fas fa-phone fa-2x text-primary mb-2"></i>
+                                <p>0916-510-881</p>
+                            </a>
+                            <a href="https://github.com/a50134" target="_blank" class="contact-link">
+                                <i class="fab fa-github fa-2x text-primary mb-2"></i>
+                                <p>GitHub</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2024 Chenghsin Lee. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+    <script src="src/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,481 @@
+/* ============================================
+   Chenghsin Lee Portfolio - Custom Styles
+   Primary Color: #6495ED (Cornflower Blue)
+   ============================================ */
+
+:root {
+    --primary-color: #6495ED;
+    --primary-dark: #4169E1;
+    --primary-light: #87CEEB;
+    --text-dark: #2c3e50;
+    --text-light: #7f8c8d;
+    --bg-light: #f8f9fa;
+    --border-color: #e0e0e0;
+}
+
+/* ============================================
+   Global Styles
+   ============================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-dark);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* ============================================
+   Glassmorphism Effect
+   ============================================ */
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.1);
+    transition: all 0.3s ease;
+}
+
+.glass-card:hover {
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 12px 40px rgba(31, 38, 135, 0.15);
+}
+
+/* ============================================
+   Typography
+   ============================================ */
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text-dark);
+    font-weight: 600;
+}
+
+.display-4, .display-5 {
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+p {
+    color: var(--text-light);
+}
+
+/* ============================================
+   Navigation Bar
+   ============================================ */
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.navbar-brand {
+    color: var(--primary-color) !important;
+    font-size: 1.5rem;
+    letter-spacing: 0.5px;
+}
+
+.navbar-brand:hover {
+    color: var(--primary-dark) !important;
+}
+
+.nav-link {
+    color: var(--text-dark) !important;
+    font-weight: 500;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+/* ============================================
+   Hero Section
+   ============================================ */
+
+.hero-section {
+    background: linear-gradient(135deg, rgba(100, 149, 237, 0.05) 0%, rgba(135, 206, 235, 0.05) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section h1 {
+    color: var(--text-dark);
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.hero-section h2 {
+    color: var(--primary-color);
+    font-size: 1.75rem;
+    font-weight: 500;
+}
+
+.hero-section .lead {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    line-height: 1.8;
+}
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* ============================================
+   Swiper Carousel Customization
+   ============================================ */
+
+.carousel-swiper {
+    height: 400px;
+}
+
+.carousel-item-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(135deg, rgba(100, 149, 237, 0.05) 0%, rgba(135, 206, 235, 0.05) 100%);
+    border-radius: 12px;
+}
+
+.carousel-item-content h3 {
+    color: var(--text-dark);
+    font-weight: 600;
+}
+
+.carousel-item-content p {
+    color: var(--text-light);
+    margin-bottom: 0;
+}
+
+.projects-swiper {
+    padding: 2rem 0;
+}
+
+.projects-swiper .swiper-slide {
+    height: auto;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: var(--primary-color);
+    background: rgba(100, 149, 237, 0.1);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background: rgba(100, 149, 237, 0.2);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 18px;
+}
+
+.swiper-pagination-bullet {
+    background-color: var(--primary-color);
+    opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1;
+}
+
+.video-container {
+    max-width: 100%;
+}
+
+/* ============================================
+   Buttons
+   ============================================ */
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: white;
+    font-weight: 600;
+    padding: 0.75rem 2rem;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(100, 149, 237, 0.3);
+}
+
+.btn-outline-primary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+    font-weight: 600;
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+/* ============================================
+   Cards
+   ============================================ */
+
+.card {
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(100, 149, 237, 0.15) !important;
+}
+
+.project-card {
+    border-left: 4px solid var(--primary-color);
+}
+
+.project-card .card-title {
+    color: var(--text-dark);
+    font-weight: 600;
+}
+
+.project-card .card-text {
+    color: var(--text-light);
+    line-height: 1.8;
+}
+
+/* ============================================
+   Badges
+   ============================================ */
+
+.badge {
+    padding: 0.5rem 0.75rem;
+    font-weight: 500;
+    font-size: 0.85rem;
+}
+
+.badge.bg-primary {
+    background-color: var(--primary-color) !important;
+}
+
+/* ============================================
+   Progress Bars
+   ============================================ */
+
+.progress {
+    height: 0.5rem;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    background-color: var(--primary-color);
+    transition: width 0.6s ease;
+}
+
+.skill-item {
+    margin-bottom: 1.5rem;
+}
+
+.skill-item span {
+    font-weight: 500;
+    color: var(--text-dark);
+}
+
+/* ============================================
+   Sections
+   ============================================ */
+
+section {
+    padding: 5rem 0;
+}
+
+section h2 {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 3rem;
+}
+
+section h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background-color: var(--primary-color);
+    border-radius: 2px;
+}
+
+.bg-light {
+    background-color: var(--bg-light);
+}
+
+/* ============================================
+   Contact Links
+   ============================================ */
+
+.contact-link {
+    text-decoration: none;
+    color: var(--text-dark);
+    transition: all 0.3s ease;
+    padding: 1.5rem;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.contact-link:hover {
+    color: var(--primary-color);
+    background-color: rgba(100, 149, 237, 0.1);
+    transform: translateY(-5px);
+}
+
+.contact-link i {
+    transition: color 0.3s ease;
+}
+
+.contact-link:hover i {
+    color: var(--primary-color);
+}
+
+.contact-link p {
+    margin: 0;
+    font-weight: 500;
+    color: var(--text-dark);
+}
+
+/* ============================================
+   Footer
+   ============================================ */
+
+footer {
+    background-color: #1a1a1a;
+    border-top: 2px solid var(--primary-color);
+}
+
+footer p {
+    color: #ccc;
+}
+
+/* ============================================
+   Animations & Transitions
+   ============================================ */
+
+[data-aos] {
+    opacity: 0;
+}
+
+[data-aos].aos-animate {
+    opacity: 1;
+}
+
+/* ============================================
+   Responsive Design
+   ============================================ */
+
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-section h2 {
+        font-size: 1.25rem;
+    }
+
+    .display-5 {
+        font-size: 2rem;
+    }
+
+    .hero-image {
+        margin-top: 2rem;
+    }
+
+    section {
+        padding: 3rem 0;
+    }
+
+    .contact-link {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .hero-section h2 {
+        font-size: 1rem;
+    }
+
+    .display-5 {
+        font-size: 1.75rem;
+    }
+
+    .btn-primary,
+    .btn-outline-primary {
+        padding: 0.5rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    section {
+        padding: 2rem 0;
+    }
+}
+
+/* ============================================
+   Utility Classes
+   ============================================ */
+
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+.bg-primary {
+    background-color: var(--primary-color) !important;
+}
+
+.opacity-25 {
+    opacity: 0.25;
+}
+
+.min-vh-100 {
+    min-height: 100vh;
+}
+
+/* ============================================
+   Smooth Scrolling
+   ============================================ */
+
+.navbar-nav .nav-link.active {
+    color: var(--primary-color) !important;
+    border-bottom: 2px solid var(--primary-color);
+}
