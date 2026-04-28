@@ -11,46 +11,6 @@ document.addEventListener('DOMContentLoaded', function() {
         offset: 100
     });
 
-    // Initialize Swiper Carousels
-    const carouselSwiper = new Swiper('.carousel-swiper', {
-        loop: true,
-        pagination: {
-            el: '.carousel-swiper .swiper-pagination',
-            clickable: true
-        },
-        navigation: {
-            nextEl: '.carousel-swiper .swiper-button-next',
-            prevEl: '.carousel-swiper .swiper-button-prev'
-        },
-        autoplay: {
-            delay: 5000,
-            disableOnInteraction: false
-        },
-        effect: 'fade',
-        fadeEffect: {
-            crossFade: true
-        }
-    });
-
-    const projectsSwiper = new Swiper('.projects-swiper', {
-        loop: true,
-        pagination: {
-            el: '.projects-swiper .swiper-pagination',
-            clickable: true
-        },
-        navigation: {
-            nextEl: '.projects-swiper .swiper-button-next',
-            prevEl: '.projects-swiper .swiper-button-prev'
-        },
-        slidesPerView: 1,
-        spaceBetween: 20,
-        breakpoints: {
-            768: {
-                slidesPerView: 2
-            }
-        }
-    });
-
     // Smooth scroll for navigation links
     const navLinks = document.querySelectorAll('.navbar-nav a[href^="#"]');
     navLinks.forEach(link => {
@@ -129,7 +89,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Log initialization
     console.log('✓ Portfolio website initialized successfully');
-    console.log('✓ Swiper carousels initialized');
 });
 
 // ============================================

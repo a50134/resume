@@ -7,7 +7,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" rel="stylesheet">
     <link href="src/css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -35,7 +34,7 @@
         </div>
     </nav>
 
-    <!-- Hero Section with Carousel -->
+    <!-- Hero Section -->
     <section id="home" class="hero-section py-5">
         <div class="container">
             <div class="row align-items-center min-vh-100">
@@ -54,36 +53,8 @@
                     </div>
                 </div>
                 <div class="col-lg-6" data-aos="fade-left">
-                    <div class="carousel-container">
-                        <div class="swiper carousel-swiper">
-                            <div class="swiper-wrapper">
-                                <!-- Carousel Items -->
-                                <div class="swiper-slide">
-                                    <div class="carousel-item-content">
-                                        <i class="fas fa-code fa-10x text-primary"></i>
-                                        <h3 class="mt-4">前端開發</h3>
-                                        <p>React, Bootstrap, HTML/CSS</p>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="carousel-item-content">
-                                        <i class="fas fa-chart-bar fa-10x text-primary"></i>
-                                        <h3 class="mt-4">數據分析</h3>
-                                        <p>Excel, 流程優化</p>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="carousel-item-content">
-                                        <i class="fas fa-globe fa-10x text-primary"></i>
-                                        <h3 class="mt-4">國際化</h3>
-                                        <p>日文 N2, 英文 B1-B2</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-pagination"></div>
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
-                        </div>
+                    <div class="hero-image-container">
+                        <img src="src/images/hero-bg.png" alt="Hero Background" class="img-fluid rounded-3">
                     </div>
                 </div>
             </div>
@@ -124,59 +95,52 @@
         </div>
     </section>
 
-    <!-- Projects & Video Carousel Section -->
+    <!-- Projects & Video Section -->
     <section id="projects" class="py-5">
         <div class="container">
             <h2 class="display-5 fw-bold mb-5 text-center" data-aos="fade-up">專案展示</h2>
             
-            <!-- Projects Carousel -->
-            <div class="projects-carousel mb-5" data-aos="fade-up">
-                <div class="swiper projects-swiper">
-                    <div class="swiper-wrapper">
-                        <!-- Project 1 -->
-                        <div class="swiper-slide">
-                            <div class="card h-100 shadow-sm project-card">
-                                <div class="card-body">
-                                    <h3 class="card-title h4 mb-3">DoraHandmade</h3>
-                                    <p class="card-text">
-                                        使用 React + Bootstrap 開發的全棧電商應用。
-                                        負責商品詳細頁面的前端開發，實現響應式設計與 API 整合。
-                                    </p>
-                                    <div class="mb-3">
-                                        <span class="badge bg-primary me-2">React</span>
-                                        <span class="badge bg-primary me-2">Bootstrap</span>
-                                        <span class="badge bg-primary">API Integration</span>
-                                    </div>
-                                    <a href="https://github.com/a50134" class="btn btn-outline-primary btn-sm" target="_blank">
-                                        <i class="fab fa-github me-2"></i>GitHub
-                                    </a>
-                                </div>
+            <!-- Projects Row -->
+            <div class="row g-4 mb-5" data-aos="fade-up">
+                <!-- Project 1 -->
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm project-card">
+                        <div class="card-body">
+                            <h3 class="card-title h4 mb-3">DoraHandmade</h3>
+                            <p class="card-text">
+                                使用 React + Bootstrap 開發的全棧電商應用。
+                                負責商品詳細頁面的前端開發，實現響應式設計與 API 整合。
+                            </p>
+                            <div class="mb-3">
+                                <span class="badge bg-primary me-2">React</span>
+                                <span class="badge bg-primary me-2">Bootstrap</span>
+                                <span class="badge bg-primary">API Integration</span>
                             </div>
-                        </div>
-                        <!-- Project 2 -->
-                        <div class="swiper-slide">
-                            <div class="card h-100 shadow-sm project-card">
-                                <div class="card-body">
-                                    <h3 class="card-title h4 mb-3">I-need-this</h3>
-                                    <p class="card-text">
-                                        使用 HTML、CSS 與 Bootstrap 開發的實用工具網站。
-                                        專注於使用者體驗與介面互動設計。
-                                    </p>
-                                    <div class="mb-3">
-                                        <span class="badge bg-primary me-2">HTML5</span>
-                                        <span class="badge bg-primary me-2">CSS3</span>
-                                        <span class="badge bg-primary">Bootstrap</span>
-                                    </div>
-                                    <a href="https://github.com/a50134" class="btn btn-outline-primary btn-sm" target="_blank">
-                                        <i class="fab fa-github me-2"></i>GitHub
-                                    </a>
-                                </div>
-                            </div>
+                            <a href="https://github.com/a50134" class="btn btn-outline-primary btn-sm" target="_blank">
+                                <i class="fab fa-github me-2"></i>GitHub
+                            </a>
                         </div>
                     </div>
-                    <div class="swiper-pagination"></div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
+                </div>
+                <!-- Project 2 -->
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm project-card">
+                        <div class="card-body">
+                            <h3 class="card-title h4 mb-3">I-need-this</h3>
+                            <p class="card-text">
+                                使用 HTML、CSS 與 Bootstrap 開發的實用工具網站。
+                                專注於使用者體驗與介面互動設計。
+                            </p>
+                            <div class="mb-3">
+                                <span class="badge bg-primary me-2">HTML5</span>
+                                <span class="badge bg-primary me-2">CSS3</span>
+                                <span class="badge bg-primary">Bootstrap</span>
+                            </div>
+                            <a href="https://github.com/a50134" class="btn btn-outline-primary btn-sm" target="_blank">
+                                <i class="fab fa-github me-2"></i>GitHub
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -185,7 +149,7 @@
                 <div class="col-12">
                     <h3 class="h4 mb-4 text-center">發表影片</h3>
                     <div class="video-container glass-card p-4">
-                        <video width="100%" height="auto" controls style="border-radius: 12px;">
+                        <video width="100%" height="auto" controls style="border-radius: 12px; max-height: 500px;">
                             <source src="/manus-storage/20260322DOMO分享_1eb8e50f.mp4" type="video/mp4">
                             您的瀏覽器不支援 HTML5 影片。
                         </video>
@@ -294,26 +258,33 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact Section - Single Row -->
     <section id="contact" class="py-5">
         <div class="container">
             <h2 class="display-5 fw-bold mb-5 text-center" data-aos="fade-up">聯絡我</h2>
             <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="glass-card p-5 text-center">
-                        <p class="lead mb-4">歡迎透過以下方式與我聯絡</p>
-                        <div class="d-flex justify-content-center gap-4 flex-wrap">
-                            <a href="mailto:cv698943@gmail.com" class="contact-link">
-                                <i class="fas fa-envelope fa-2x text-primary mb-2"></i>
+                <div class="col-12">
+                    <div class="glass-card p-5">
+                        <div class="contact-links-row">
+                            <a href="mailto:cv698943@gmail.com" class="contact-link-item" data-aos="fade-up">
+                                <i class="fas fa-envelope fa-3x text-primary mb-3"></i>
+                                <h4>Email</h4>
                                 <p>cv698943@gmail.com</p>
                             </a>
-                            <a href="tel:0916510881" class="contact-link">
-                                <i class="fas fa-phone fa-2x text-primary mb-2"></i>
+                            <a href="tel:0916510881" class="contact-link-item" data-aos="fade-up" data-aos-delay="100">
+                                <i class="fas fa-phone fa-3x text-primary mb-3"></i>
+                                <h4>電話</h4>
                                 <p>0916-510-881</p>
                             </a>
-                            <a href="https://github.com/a50134" target="_blank" class="contact-link">
-                                <i class="fab fa-github fa-2x text-primary mb-2"></i>
-                                <p>GitHub</p>
+                            <a href="https://github.com/a50134" target="_blank" class="contact-link-item" data-aos="fade-up" data-aos-delay="200">
+                                <i class="fab fa-github fa-3x text-primary mb-3"></i>
+                                <h4>GitHub</h4>
+                                <p>a50134</p>
+                            </a>
+                            <a href="https://www.linkedin.com/in/a50134" target="_blank" class="contact-link-item" data-aos="fade-up" data-aos-delay="300">
+                                <i class="fab fa-linkedin fa-3x text-primary mb-3"></i>
+                                <h4>LinkedIn</h4>
+                                <p>Chenghsin Lee</p>
                             </a>
                         </div>
                     </div>
@@ -331,7 +302,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
     <script src="src/js/main.js"></script>
 </body>
 </html>

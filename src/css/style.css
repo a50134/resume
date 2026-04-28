@@ -129,11 +129,20 @@ p {
     line-height: 1.8;
 }
 
-.hero-image {
+.hero-image-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
+}
+
+.hero-image-container img {
+    box-shadow: 0 10px 40px rgba(100, 149, 237, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.hero-image-container img:hover {
+    transform: scale(1.02);
 }
 
 /* ============================================
@@ -343,33 +352,65 @@ section h2::after {
    Contact Links
    ============================================ */
 
-.contact-link {
+.contact-links-row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.contact-link-item {
     text-decoration: none;
     color: var(--text-dark);
     transition: all 0.3s ease;
     padding: 1.5rem;
-    border-radius: 8px;
-    display: inline-block;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+    min-width: 150px;
+    background: rgba(100, 149, 237, 0.05);
 }
 
-.contact-link:hover {
+.contact-link-item:hover {
     color: var(--primary-color);
-    background-color: rgba(100, 149, 237, 0.1);
+    background-color: rgba(100, 149, 237, 0.15);
     transform: translateY(-5px);
 }
 
-.contact-link i {
+.contact-link-item i {
     transition: color 0.3s ease;
-}
-
-.contact-link:hover i {
     color: var(--primary-color);
 }
 
-.contact-link p {
+.contact-link-item:hover i {
+    color: var(--primary-dark);
+}
+
+.contact-link-item h4 {
+    margin: 0.5rem 0;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.contact-link-item p {
     margin: 0;
     font-weight: 500;
-    color: var(--text-dark);
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .contact-links-row {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .contact-link-item {
+        min-width: 100%;
+    }
 }
 
 /* ============================================
